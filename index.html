@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <i class="fa fa-angle-down"></i>
+            <span class="top">Playing Now</span>
+            <i class="fa fa-list-ul"></i>
+        </div>
+        <div class="imageArea">
+            <img src="2.jpg" alt="" id="track_image">
+        </div>
+        <div class="songDetails">
+            <p id="songName">Song Name</p>
+            <p id="artist">Artist</p>
+        </div>
+        <div class="durationArea">
+            <input type="range" id="duration">
+        </div>
+        <div class="controls">
+            <button onclick="previousSong()"><i class="fa fa-backward"></i></button>
+            <button id="play" onclick="justplay()"><i class="fa fa-play" ></i></button>
+            <button onclick="nextSong()"><i class="fa fa-forward"></i></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

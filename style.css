@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.container
+{
+    height: 70vh;
+    width: 20%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 5px #ffffff,5px 5px 12px black;
+}
+.wrapper
+{
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.wrapper .top
+{
+    padding: 10px 60px;
+}
+.wrapper i
+{
+    cursor: pointer;
+}
+.imageArea
+{
+    width: 90%;
+    height: 40vh;
+    background-color: aqua;
+    margin: 5%;
+    border-radius: 35px;
+}
+img
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+}
+.songDetails
+{
+    text-align: center;
+}
+.songDetails #songName
+{
+    font-size: 21px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(106, 124, 105, 0.971);
+    padding: 5px;
+}
+.songDetails #artist
+{
+    color: #393939;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    padding: 3px;
+}
+.controls 
+{
+    display: flex;
+    justify-content: center;
+}
+.controls button 
+{
+    margin: 20px 30px;
+    padding: 10px 15px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    transition: transform .4s;
+}
+.controls button #play
+{
+    box-shadow: inset -1px -2px 5px rgb(0, 0, .15) , 5px 5px 15px #ffffff;
+}
+@media  screen and (max-width:1000px) {
+    .container
+    {
+        width:60%;
+    }
+}
+
+
+
+.durationArea
+{
+    display: none;
+}
